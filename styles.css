@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    font-family: "Source+Sans+3", sans-serif;
+    font-size: 20px;
+}
+nav, footer {
+   background-color: #776e65;
+   padding: 30px;
+   color: #eee4da; 
+}
+nav a,
+footer a {
+   padding: 10px;
+   text-decoration: none;
+   color: #faf8ef;
+}
+nav a:hover,
+footer a:hover {
+   color: #eee4da;
+   text-decoration: underline;
+}
+main{
+    background-color: #faf8ef;
+    padding: 30px;
+}
+section{
+    padding: 30px;
+}
+p {
+    width: 50%;
+    margin: auto;
+}
+form {
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+}
+label {
+    display: block;
+    font-size: smaller;
+    font-weight: 600;
+}
+header section {
+    background: #eee4da;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+    flex: 25%;
+}
+img {
+    padding: 10px;
+    height: 300px;
+}
+h2 {
+    font-size: 42px;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-color: #776e65;
+}
+button {
+    background-color: #776e65;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #faf8ef;
+    letter-spacing: 2px;
+    border: none;
+}
+button:hover {
+    color: #eee4da;
+    background-color: rgba(119, 110, 101, 0.75);
+}
+.grid-container {
+    display: grid;
+    background-color: #eee4da;
+    padding: 30px;
+    width: 500px;
+    height: 700px;
+    margin: 30px auto;
+    row-gap: 30px;
+    grid-template-rows: 4fr 2fr;
+  }
+.grid-item {
+    background-color: #bbada0;
+    padding: 30px;
+}
+.grid-flex-item {
+    font-size: 48px;
+    color:#eee4da;
+}
+.grid-item:nth-child(1) .grid-flex-item {
+    font-size: 132px;
+  }
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    body {
+        font-size: 18px;
+    }
+    p {
+        width: auto;
+    }
+    form {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .grid-container {
+        width: auto;
+      }
+    .grid-item:nth-child(1) .grid-flex-item {
+        font-size: 96px;
+      }
+      section{
+        padding: 30px 0;
+    }
+  }
+  
+  

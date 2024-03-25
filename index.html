@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Olena's Game Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="icon" type="image/x-icon" href="https://play2048.co/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <a href="#about_game">About Game</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#game">The Game</a>
+          <a href="#early_access">Early Access</a>
+        </nav>
+        <section>
+          <h1>About this page</h1>
+          <p>This page is created for Complex Practical Task 1 to practice HTML and CSS.</p>
+        </section>
+      </header>
+      <main>
+        <section id="about_game">
+            <h2>2048 Game</h2>
+            <p>I didn't know about this game before getting this task. Now I am playing it instead of studying. If you don't know this game, it's better not to start.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="flex-container">
+                <div class="flex-item"><img src="Images/2048-game-new-game.png" alt="2048 game - new game"></div>
+                <div class="flex-item"><img src="Images/2048-game-first-steps.png" alt="2048 game - first steps"></div>
+                <div class="flex-item"><img src="Images/2048-game-stuck.png" alt="2048 game - stuck"></div>
+                <div class="flex-item"><img src="Images/2048-game-game-over.png" alt="2048 game - game over"></div>
+              </div>
+        </section>
+        <section id="game">
+            <h2>The Game</h2>
+            <p>Coming soon.</p>
+            <div class="grid-container">
+              <div class="grid-item flex-container">
+                <div class="grid-flex-item">2048</div>
+              </div>
+              <div class="grid-item flex-container">
+                <div class="grid-flex-item">Score: 0</div>
+              </div>    
+            </div>
+        </section>
+        <section id="early_access">
+            <h2>Sign up for early access!</h2>
+            <p>Once the game is released, you will be notified by email.</p>
+          <form action="/" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required="">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required="">
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" maxlength="500" required=""></textarea>
+            </div>
+            <button type="submit">submit</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>Created by Olena. <a href="https://prometheus.org.ua/">Prometheus. Frontend. Базовий курс від Ciklum.</a> 2024</p>
+      </footer>
+    </body>
+</html>
